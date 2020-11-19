@@ -581,7 +581,7 @@ body {
 }
 @media screen and (min-width: 576px) {
   .header {
-    background: url(../img/2x/Bg-1.png) center bottom;
+    background: url(../img/2x/Bg-1.jpg) center bottom;
     background-size: cover;
     background-repeat: no-repeat;
   }
