@@ -1,17 +1,36 @@
 .container__header
-    +flex(space-between, center)
+    +flex($cross: center)
 .header
-    background: url(../img/1x/Bg-1.jpg)
-    background-size: 100% 100%
+    background: url(../img/1x/Bg-1.jpg) center bottom
+    background-size: cover
+    background-repeat: no-repeat
     min-height: 80vh
     min-width: 100%
     padding-top: rem(45px)
+    +media(576px)
+        background: url(../img/2x/Bg-1.png) center bottom
+        background-size: cover
+        background-repeat: no-repeat
     &__link
         font-family: var(--font-bolder)
         font-size: rem(16px)
+        letter-spacing: 1px
         font-weight: 700
         text-transform: uppercase
         color: #f9fafe
+        margin-right: rem(20px)
+        &:hover
+            color: var(--color-accent)
+    &__btn
+        border: 1px solid #f9fafe
+        border-radius: 5px
+        color: #f9fafe
+        &:hover
+           color: var(--color-accent) 
+           border-color: var(--color-accent) 
+    &__nav
+        margin-left: auto
+    
 .mobile
     position: absolute
     top: 0
@@ -30,13 +49,22 @@
         text-transform: uppercase
         font-size: rem(18px)
         &:hover
-            color: #dd1a1ab7
+            color: var(--color-accent)
     &--margin
         margin: rem(20px) auto    
 
 .nav--hide
     visibility: hidden
     width: 0
+    height: 0
+    +media(960px)
+        visibility: visible
+        width: auto
+        height: auto
+.hamburger
+    +media(960px)
+        visibility: hidden
+
 
 
 
