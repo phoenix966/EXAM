@@ -467,6 +467,7 @@ html {
   border: 0;
   margin: 0;
   overflow: visible;
+  z-index: 991;
 }
 .hamburger:hover {
   opacity: 0.7;
@@ -549,9 +550,10 @@ html {
 }
 
 .header {
-  background: url(../img/2x/Bg-1.png);
-  background-size: cover;
+  background: url(../img/1x/Bg-1.jpg);
+  background-size: 100% 100%;
   min-height: 80vh;
+  min-width: 100%;
   padding-top: 2.8125rem;
 }
 .header__link {
@@ -560,6 +562,40 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   color: #f9fafe;
+}
+
+.mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 520;
+  background: #0e0404e1;
+  visibility: hidden;
+}
+.mobile.is-active {
+  visibility: visible;
+}
+.mobile__link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+.mobile__link:hover {
+  color: #dd1a1ab7;
+}
+.mobile--margin {
+  margin: 1.25rem auto;
+}
+
+.nav--hide {
+  visibility: hidden;
+  width: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

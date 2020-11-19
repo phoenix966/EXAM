@@ -29,15 +29,15 @@
                         </g>
                     </svg>
                 </div>
-                <nav class="header__nav">
+                <nav class="header__nav nav--hide">
                     <a href="#" class="header__link link--reset">Лучшие Направления</a>
                     <a href="#" class="header__link link--reset">Создайте вашу лодку</a>
                     <a href="#" class="header__btn btn">Войти</a>
                 </nav>
                 <nav class="mobile">
-                    <a href="#" class="mobile__link link--reset">Лучшие Направления</a>
+                    <a href="#" class="mobile__link btn">Войти</a>
+                    <a href="#" class="mobile__link link--reset mobile--margin">Лучшие Направления</a>
                     <a href="#" class="mobile__link link--reset">Создайте вашу лодку</a>
-                    <a href="#" class="mobile__btn btn">Войти</a>
                 </nav>
                 <button class="hamburger hamburger--3dx" type="button">
                     <span class="hamburger-box">
@@ -48,12 +48,13 @@
         </div>
     </div>
     <script>
-        // Look for .hamburger
         var hamburger = document.querySelector(".hamburger");
+        var mobile = document.querySelector(".mobile");
         // On click
         hamburger.addEventListener("click", function() {
           // Toggle class "is-active"
           hamburger.classList.toggle("is-active");
+          mobile.classList.toggle("is-active");
           // Do something else, like open/close menu
         });
       </script>

@@ -1,9 +1,10 @@
 .container__header
     +flex(space-between, center)
 .header
-    background: url(../img/2x/Bg-1.png)
-    background-size: cover
+    background: url(../img/1x/Bg-1.jpg)
+    background-size: 100% 100%
     min-height: 80vh
+    min-width: 100%
     padding-top: rem(45px)
     &__link
         font-family: var(--font-bolder)
@@ -11,6 +12,34 @@
         font-weight: 700
         text-transform: uppercase
         color: #f9fafe
+.mobile
+    position: absolute
+    top: 0
+    left: 0
+    +flex(center,center)
+    flex-direction: column
+    width: 100%
+    height: 100%
+    z-index: 520
+    background: #0e0404e1
+    visibility: hidden
+    &.is-active
+        visibility: visible
+    &__link
+        color: white
+        text-transform: uppercase
+        font-size: rem(18px)
+        &:hover
+            color: #dd1a1ab7
+    &--margin
+        margin: rem(20px) auto    
+
+.nav--hide
+    visibility: hidden
+    width: 0
+
+
+
 
     
     
