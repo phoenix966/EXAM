@@ -31,7 +31,7 @@
                 </div>
                 <nav class="header__nav nav--hide">
                     <a href="#" class="header__link link--reset">Лучшие Направления</a>
-                    <a href="#" class="header__link link--reset">Создайте вашу лодку</a>
+                    <a href="#" class="header__link link--reset">Создайте вашу яхту</a>
                     <a href="#" class="header__btn btn">Войти</a>
                    
                 </nav>
@@ -46,17 +46,30 @@
                     </span>
                     </button>                
             </div>
+            <div class="header__top">
+                <div class="container">
+                    <h1 class="header__title">Зарезервируй яхту сегодня!</h1>
+                    <h3 class="header__title-sm">и отправляйся в свой РАЙ!</h3>
+                </div>
+            </div>
+            <div class="header__search">
+                <div class="container">
+                    <form action="#" method="GET">
+                        <div class="search__wrap">
+                            <input class="search__input" type="text" placeholder=" Куда направляетесь, капитан?" id="1" >
+                            <button class="search__btn btn-2 icon-Boat"> <span class="search--hide">Поиск</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script>
         var hamburger = document.querySelector(".hamburger");
         var mobile = document.querySelector(".mobile");
-        // On click
         hamburger.addEventListener("click", function() {
-          // Toggle class "is-active"
           hamburger.classList.toggle("is-active");
           mobile.classList.toggle("is-active");
-          // Do something else, like open/close menu
         });
       </script>
 </body>
