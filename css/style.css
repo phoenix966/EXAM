@@ -718,7 +718,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .search__wrap {
-    width: 50%;
+    width: 70%;
   }
 }
 .search__input {
