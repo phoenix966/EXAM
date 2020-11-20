@@ -1,0 +1,42 @@
+.container__info
+    +flex(space-evenly,center)
+    flex-wrap: wrap
+    padding: 38px 95px
+    text-align: center
+    border-radius: 5px
+    width: 70%
+    margin:0 auto
+    background: #fff
+    box-shadow: 0 0 15px rgba(52,52,52,0.15)
+    margin-bottom: 100px
+    transform: translateY(75px)
+    padding: 0
+    +media(568px)
+        transform: translateY(75px)
+        padding: 38px 95px
+.info
+
+    &__number
+        font-family: var(--font-bold)
+        font-weight: bold
+        font-size: rem(30px)
+        color: var(--color-dark)
+        margin: 0
+        margin-bottom: rem(20px)
+    &__text
+        font-family: var(--font-regular)
+        font-weight: regular
+        font-size: rem(18px)
+        color: var(--color-light)
+        margin: 0
+    &__box
+        flex: 1 1 200px
+        +media(728px)
+            flex: 1 1 50px
+        +media(960px)
+            flex: 1 1 auto 
+            padding-left: 50px
+            border-left: 1px solid #d4d4d4
+            &:nth-of-type(1)
+                border: none
+                
