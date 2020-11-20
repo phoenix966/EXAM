@@ -1,0 +1,27 @@
+.places
+    text-align: center
+    &__title
+        font-family: var(--font-bolder)
+        font-weight: 500
+        color: #343435
+        font-size: rem(30px)
+        letter-spacing: rem(1px)
+        line-height: rem(28px)
+    &__text
+        font-family: var(--font-regular)
+        font-weight: 400
+        color: var(--color-light)
+        font-size: rem(16px)
+        letter-spacing: 0
+        line-height: rem(22px)
+    &__grid
+        display: grid
+        margin: 0 auto
+        grid-template-columns: repeat(3, 360px)
+        grid-template-rows: repeat(3, 370px)
+        grid-gap: 30px
+    &__col
+        border: 1px solid black
+        border-radius: 10px
+    &__col-1
+        grid-column: 1 / 3
