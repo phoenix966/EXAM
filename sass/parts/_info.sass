@@ -9,13 +9,17 @@
     background: #fff
     box-shadow: 0 0 15px rgba(52,52,52,0.15)
     margin-bottom: 100px
-    transform: translateY(75px)
+    position: absolute
+    bottom: -250px
+    left: 0
+    right: 0
     padding: 0
     +media(568px)
-        transform: translateY(75px)
         padding: 38px 95px
+    +media(719px)
+        bottom: -175px
 .info
-
+    
     &__number
         font-family: var(--font-bold)
         font-weight: bold
