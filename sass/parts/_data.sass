@@ -1,0 +1,25 @@
+
+
+.container__data
+        +media(728px)
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: repeat(2, 1fr)
+            grid-gap: 20px
+            
+.data
+    text-align: center
+    
+    &__box
+        display: flex
+    &__text
+        font-family: var(--font-regular)
+        font-size: rem(16px)
+        color: #ffffff
+    &--margin
+        margin-right: 20px  
+    &__wrap
+        position: relative
+        margin-bottom: 20px
+        +media(728px)
+            margin-bottom: 0     
