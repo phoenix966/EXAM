@@ -1,14 +1,16 @@
 
 
 .container__data
-        +media(728px)
-            display: grid
-            grid-template-columns: repeat(2,1fr)
-            grid-template-rows: repeat(2, 1fr)
-            grid-gap: 20px
+    margin-bottom: rem(100px) 
+    +media(728px)
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-gap: 20px
             
 .data
     text-align: center
+    margin-bottom: rem(85px)
     
     &__box
         display: flex
@@ -17,7 +19,7 @@
         font-size: rem(16px)
         color: #ffffff
     &--margin
-        margin-right: 20px  
+        margin-right: 10px  
     &__wrap
         position: relative
         margin-bottom: 20px
