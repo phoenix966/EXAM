@@ -879,6 +879,7 @@ body {
 }
 .content__img:hover {
   filter: drop-shadow(16px 16px 20px black);
+  transition: 0.4s;
 }
 @media screen and (min-width: 728px) {
   .content__img {
@@ -1035,6 +1036,7 @@ body {
   height: 44px;
   text-align: center;
   padding-top: 13px;
+  margin-right: 20px;
   box-sizing: border-box;
   background: #717171;
   color: #ffffff;
