@@ -97,10 +97,17 @@
 
 .search
     &__btn
-        width: rem(50px)
-        font-size: 14px
-        +media(992px)
-            width: rem(200px)
+        font-size: rem(14px)
+        width: rem(70px)
+        box-sizing: border-box
+        +media(780px)
+            width: rem(220px)
+
+    &-txt--hide
+            position: absolute
+            z-index: -2
+            +media(780px)
+                position: static
     &__wrap
         +flex(center,center)
         border-radius: 10px
@@ -120,6 +127,7 @@
         font-weight: 400
         font-size: rem(14px)
         text-transform: uppercase
+        padding-left: 30px
     &--hide
         font-size: 0
         +media(992px)
