@@ -86,7 +86,7 @@
         </section>
         </div>
         <section class="content">
-            <div class="container">
+            <div class="container container__content">
                 <h2 class="content__title">EXPLORE OUR TOP DESTINATIONS</h2>
                 <p class="content__text">Check out our list of the best boating locations below—in no particular order—and if you manage to go boating in even just one the following destinations, we promise you’ll be a happy boater for sure. </p>
             
@@ -94,7 +94,7 @@
                 <div class="content__col content__col-1">
                     <picture>
                         <source srcset="img/2x/pic-1.jpg" media="max-width: 728px">
-                        <img src="img/1x/pic-1.jpg" alt="no" class="content__img">
+                        <a class="content__link" href="img/1x/pic-1.jpg"><img src="img/1x/pic-1.jpg" alt="no" class="content__img"></a>
                     </picture>
                         <div class="content__label">
                             <span class="content__icon icon-Boat"> 730</span>
@@ -107,7 +107,7 @@
                 <div class="content__col content__col-2">
                     <picture>
                         <source srcset="img/2x/pic-2.jpg" media="max-width: 728px">
-                        <img src="img/1x/pic-2.jpg" alt="no" class="content__img">
+                        <a class="content__link" href="img/1x/pic-2.jpg"><img src="img/1x/pic-2.jpg" alt="no" class="content__img"></a>
                     </picture>
                     <div class="content__label">
                         <span class="content__icon icon-Boat"> 621</span>
@@ -121,7 +121,7 @@
                 <div class="content__col content__col-3">
                     <picture>
                         <source srcset="img/2x/pic-3.jpg" media="max-width: 728px">
-                        <img src="img/1x/pic-3.jpg" alt="no" class="content__img">
+                        <a class="content__link" href="img/2x/pic-3.jpg" ><img src="img/1x/pic-3.jpg" alt="no" class="content__img"></a>
                     </picture>
                     <div class="content__label">
                         <span class="content__icon icon-Boat"> 543</span>
@@ -134,7 +134,7 @@
                 <div class="content__col content__col-4">
                     <picture>
                         <source srcset="img/2x/pic-4.jpg" media="max-width: 728px">
-                        <img src="img/1x/pic-4.jpg" alt="no" class="content__img">
+                        <a class="content__link" href="img/1x/pic-4.jpg"><img src="img/1x/pic-4.jpg" alt="no" class="content__img"></a>
                     </picture>
                     <div class="content__label">
                         <span class="content__icon icon-Boat"> 495</span>
@@ -147,7 +147,7 @@
                 <div class="content__col content__col-5">
                     <picture>
                         <source srcset="img/2x/pic-5.jpg" media="max-width: 728px">
-                        <img src="img/1x/pic-5.jpg" alt="no" class="content__img">
+                        <a class="content__link" href="img/1x/pic-5.jpg"><img src="img/1x/pic-5.jpg" alt="no" class="content__img"></a>
                     </picture>
                     <div class="content__label">
                         <span class="content__icon icon-Boat"> 402</span>
@@ -305,6 +305,18 @@
         type: 'image',
         delegate: 'a',
         gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1]
+        }
+    })
+</script>
+<script>
+    $('.container__content').magnificPopup({
+        type: 'image',
+        delegate: '.content__link',
+        gallery: {
+            loop: true,
             enabled: true,
             navigateByImgClick: true,
             preload: [0,1]
