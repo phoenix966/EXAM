@@ -1,6 +1,6 @@
 .content
     text-align: center
-    margin-bottom: 100px
+    margin-bottom: rem(100px)
     &__title
         font-family: var(--font-text)
         font-weight: regular
@@ -21,19 +21,19 @@
         margin-bottom: rem(95px)
         +media(728px)
             display: grid
-            grid-template-columns: autofill repeat(3, 280px)
-            grid-template-rows: autofill repeat(3, 290px)
+            grid-template-columns: autofill repeat(3, rem(280px))
+            grid-template-rows: autofill repeat(3, rem(290px))
             grid-gap: 20px
         +media(968px)
-            grid-template-columns:  repeat(3, minmax(280px,360px))
-            grid-template-rows:  repeat(2, minmax(290px,370px))
-            grid-gap: 25px
+            grid-template-columns:  repeat(3, minmax(rem(280px),rem(360px)))
+            grid-template-rows:  repeat(2, minmax(rem(290px),rem(370px)))
+            grid-gap: rem(25px)
 
     &__col
         border-radius: 5px
         box-sizing: border-box
         position: relative
-        margin-bottom: 10px
+        margin-bottom: rem(10px)
         overflow: hidden
         +media(728px)
             margin-bottom: 0
@@ -48,10 +48,10 @@
         border-radius: 5px
     &__label
         position: absolute
-        top: 20px
+        top: rem(20px)
         left: 1rem
         background: var(--color-accent)
-        padding: 10px 20px
+        padding: rem(10px) rem(20px)
         border-radius: 5px
         color: #ffffff
         text-align: center
@@ -73,7 +73,7 @@
         font-weight: regular
         color: #ffffff
         font-size: rem(30px)
-        margin: 5px 0
+        margin: rem(5px) 0
         text-align: left
     &__pic-text
         font-family: var(--font-text)
@@ -84,7 +84,7 @@
         margin: 0
     &__btn
         color: var(--color-dark)
-        padding: 15px 25px
+        padding: rem(15px) rem(25px)
         font-size: rem(14px)
         text-align: center
         border-radius: 5px
