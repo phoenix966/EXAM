@@ -1299,6 +1299,10 @@ body {
   margin-bottom: 0.625rem;
   overflow: hidden;
 }
+.content__col:hover {
+  box-shadow: 14px 11px 11px 0px rgba(0, 0, 0, 0.6);
+  transition: all 0.7s;
+}
 @media screen and (min-width: 728px) {
   .content__col {
     margin-bottom: 0;
@@ -1420,6 +1424,10 @@ body {
   vertical-align: middle;
   border-radius: 5px;
   overflow: hidden;
+}
+.data__wrap:hover {
+  box-shadow: 14px 11px 11px 0px rgba(0, 0, 0, 0.6);
+  transition: all 0.7s;
 }
 @media screen and (min-width: 728px) {
   .data__wrap {

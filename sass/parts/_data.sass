@@ -2,6 +2,7 @@
 
 .container__data
     margin-bottom: rem(100px) 
+    
     +media(728px)
         display: grid
         grid-template-columns: repeat(2,1fr)
@@ -26,5 +27,8 @@
         vertical-align: middle
         border-radius: 5px
         overflow: hidden
+        &:hover
+            box-shadow: 14px 11px 11px 0px rgba(0,0,0,0.6)
+            transition: all 0.7s 
         +media(728px)
             margin-bottom: 0     
