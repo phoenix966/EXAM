@@ -1028,6 +1028,7 @@ body {
 }
 .header__link:hover {
   border-color: var(--color-accent);
+  transition: all 0.6s;
 }
 .header__btn {
   border: 1px solid #f9fafe;
@@ -1037,6 +1038,7 @@ body {
 .header__btn:hover {
   color: var(--color-accent);
   border-color: var(--color-accent);
+  transition: all 0.6s;
 }
 .header__nav {
   margin-left: auto;
@@ -1124,7 +1126,6 @@ body {
 }
 
 .search__btn {
-  font-family: var(--font-bold);
   font-weight: bold;
   width: 4.375rem;
   box-sizing: border-box;
@@ -1135,6 +1136,8 @@ body {
   }
 }
 .search-txt--hide {
+  font-family: var(--font-bolder);
+  color: #ffffff;
   position: absolute;
   z-index: -2;
 }
@@ -1343,6 +1346,7 @@ body {
   font-family: var(--font-bold);
   font-weight: 700;
   font-size: 1rem;
+  color: #ffffff;
 }
 .content__pic-title {
   font-family: var(--font-text);
@@ -1482,7 +1486,7 @@ body {
   width: 2.75rem;
   height: 2.75rem;
   text-align: center;
-  padding-top: 0.8125rem;
+  line-height: 2.75rem;
   margin-right: 1.25rem;
   box-sizing: border-box;
   background: #717171;
