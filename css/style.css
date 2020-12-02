@@ -1093,11 +1093,13 @@ body {
 }
 .header__input {
   border-radius: 5px;
-  border: 1px solid var(--color-accent);
+  border: 1px solid gray;
   font-family: var(--font-regular);
   color: var(--color-dark);
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  outline: none;
+  padding: 0.3125rem 0.1875rem;
 }
 .header__box {
   width: 7.5rem;
@@ -1210,6 +1212,7 @@ body {
   font-size: 0.875rem;
   text-transform: uppercase;
   padding-left: 1.875rem;
+  outline: none;
 }
 .search--hide {
   font-size: 0;
@@ -1533,6 +1536,7 @@ body {
 }
 .footer--input {
   height: 2.5rem;
+  outline: none;
 }
 .footer--btn {
   height: 2.625rem;
