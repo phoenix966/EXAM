@@ -1076,6 +1076,41 @@ body {
     letter-spacing: 0.0625rem;
   }
 }
+.header__search {
+  margin-bottom: 14.375rem;
+}
+.header__form {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 0.375rem 1.25rem;
+}
+.header__input {
+  border-radius: 5px;
+  border: 1px solid var(--color-accent);
+  font-family: var(--font-regular);
+  color: var(--color-dark);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.header__box {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding-top: 3.125rem;
+}
+.header__pic {
+  width: 100%;
+}
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+  width: 33%;
+}
 
 .mobile {
   position: absolute;
@@ -1183,10 +1218,6 @@ body {
   .search--hide {
     font-size: 0.875rem;
   }
-}
-
-.header__search {
-  margin-bottom: 14.375rem;
 }
 
 .container__info {

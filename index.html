@@ -32,7 +32,7 @@
                 <nav class="header__nav nav--hide">
                     <a href="#" class="header__link link--reset">TOP DESTINATIONS</a>
                     <a href="#" class="header__link link--reset">ADD YOUR BOAT</a>
-                    <a href="#" class="header__btn btn">SIGN UP</a>
+                    <a href="#test-form" class="header__btn btn popup-with-form">SIGN UP</a>
                 </nav>
                 <nav class="mobile">
                     <a href="#" class="mobile__link link--reset">SIGN UP</a>
@@ -83,6 +83,24 @@
              </div>
         </div>
         </section>
+        <form id="test-form" class="mfp-hide white-popup-block">
+            <h1 class="header__FormTittle"></h1>
+            <fieldset class="header__form" style="border:0;">
+                <ol class="header__list list--reset">
+                    <div>
+                        <li>
+                            <input class="header__input" id="name" name="name" type="text" placeholder="Введите свой логин" required="">
+                        </li>
+                        <li>
+                            <input class="header__input" id="password" name="pass" type="text" placeholder="Введите свой пароль" required="">
+                        </li>
+                    </div>
+                        <li class="header__box">
+                            <img src="img/lock.png" alt="lock" class="header__pic">
+                        </li>
+                </ol>
+            </fieldset>
+        </form>
         </div>
         <section class="content">
             <div class="container container__content">
@@ -341,5 +359,27 @@
         }
     })
 </script>
+<script>
+    $(document).ready(function() {
+	$('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+});
+</script>
+
 </body>
 </html>
