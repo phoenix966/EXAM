@@ -1142,6 +1142,10 @@ body {
   opacity: 0;
 }
 
+.mfp-close {
+  visibility: hidden;
+}
+
 .mobile {
   position: absolute;
   top: 0;
