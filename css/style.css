@@ -1004,7 +1004,6 @@ body {
   box-sizing: border-box;
   min-width: 100%;
   padding-top: 2.8125rem;
-  margin-bottom: 10.9375rem;
   position: relative;
 }
 @media screen and (min-width: 576px) {
@@ -1013,6 +1012,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+.header--margin {
+  margin-bottom: 10.9375rem;
 }
 .header__link {
   font-family: var(--font-bolder);
@@ -1322,6 +1324,8 @@ body {
 
 .content {
   text-align: center;
+}
+.content--margin {
   margin-bottom: 6.25rem;
 }
 .content__title {
@@ -1444,7 +1448,6 @@ body {
   background-size: cover;
   padding: 9.0625rem 0;
   text-align: center;
-  margin-bottom: 6.25rem;
 }
 @media screen and (min-width: 728px) {
   .hero {
@@ -1452,6 +1455,9 @@ body {
     background-size: cover;
     min-height: 40vh;
   }
+}
+.hero--margin {
+  margin-bottom: 6.25rem;
 }
 .hero__btn {
   background: var(--color-accent);
@@ -1476,6 +1482,8 @@ body {
 
 .data {
   text-align: center;
+}
+.data--margin {
   margin-bottom: 5.3125rem;
 }
 .data__box {
