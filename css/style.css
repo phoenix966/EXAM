@@ -1013,7 +1013,7 @@ body {
     background-repeat: no-repeat;
   }
 }
-.header--margin {
+.header--mod {
   margin-bottom: 10.9375rem;
 }
 .header__link {
@@ -1325,7 +1325,7 @@ body {
 .content {
   text-align: center;
 }
-.content--margin {
+.content--mod {
   margin-bottom: 6.25rem;
 }
 .content__title {
@@ -1456,7 +1456,7 @@ body {
     min-height: 40vh;
   }
 }
-.hero--margin {
+.hero--mod {
   margin-bottom: 6.25rem;
 }
 .hero__btn {
@@ -1483,7 +1483,7 @@ body {
 .data {
   text-align: center;
 }
-.data--margin {
+.data--mod {
   margin-bottom: 5.3125rem;
 }
 .data__box {
